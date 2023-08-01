@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CHAU HUNG CUONG-2022104030223</title>
+    <link rel="stylesheet" href="CHAU HUNG CUONG.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa fa-remove" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa fa-bars" onclick="openmenu()"></i>
+    </nav>
+   <div class="header-text">
+    <p>Im a designer</p>
+    <h1>Hi, I'm <span> Chau Hung Cuong</span> <br>from Vietnamese</h1>
+   </div>     
+
+    </div>
+        
+    </div>
+<!------about------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/hình 2.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Name: Chau Hung Cuong</p>
+                <p>Date: 15/10/2002</p>
+                <p>Location: Bình Dương</p>
+                <p>Phone: 0348 545 586</p>
+                <p>Email: 2022104030223@student.tdmu.edu.vn</p>
+                <p>Address: 243/73, Huỳnh Văn lũy, phú lợi, Thủ Dầu Một, Bình Dương</p>
+                <p>Object: After completing my undergraduate degree in graphic design, my goal is to become a multi-talented graphic designer and make an active contribution to the creative industry. I want to build a reputation for myself by creating unique and impressive products. I aspire to work in a famous company or organization where I can work on creative projects, contribute new ideas and develop my graphic design skills. I also hope to be an inspiration for young people who are passionate about graphic design and share their knowledge through teaching or blogging.</p>
+            </div>
+            <div id="skills">
+            <section id="skills" class="skills">
+                <div class="main-text">
+
+                    <h2>Kỹ Năng</h2>
+                </div>
+                <div class="skill-main">
+                    <div class="skill-left"> 
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Photoshop</p>
+                            </div>
+                            <div class="bar">
+                                <span class="Photoshop"></span>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Illustrator</p>
+                            </div>
+                            <div class="bar">
+                                <span class="Illustrator"></span>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Indesign</p>
+                            </div>
+                            <div class="bar">
+                                <span class="Indesign"></span>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Premiere</p>
+                            </div>
+                            <div class="bar">
+                                <span class="Premiere"></span>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>After Effects</p>
+                            </div>
+                            <div class="bar">
+                                <span class="After Effects"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--------portfolio---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/Screenshot 2023-07-31 134606.png"width="400px" height="400px">
+                    <img src="image/ps01.png"width="400px" height="500px" >
+                    <img src="image/bbf5448e6df3afadf6e2.jpg"width="800px" height="500px" >
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>2022104030223@student.tdmu.edu.vn</p>
+                    <p>0397083397</p>
+                    <div class="social-icon">
+                    <a href=""><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+                    <a href=""><i class="fa fa-instagram w3-hover-opacity"></i></a>
+                    <a href=""><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright by Chau Cuong</p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tadcontects = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function openmenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
